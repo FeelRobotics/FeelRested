@@ -14,7 +14,7 @@ Quickstart
 Example adapted from code in tests.py.
 
 1. Install the package:
-    ``pip install git+https://github.com/peterh32/django-rest-framework-drilldown.git``
+    ``pip install --index-url https://pypi.kiiroo.com/pypi feel-rested``
 
 
 2. Create a view that's a subclass of DrillDownAPIView (use your own models; "Invoice" is just an example)::

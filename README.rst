@@ -17,7 +17,7 @@ Example adapted from code in tests.py.
     ``pip install --index-url https://pypi.kiiroo.com/pypi feel-rested``
 
 
-2. Create a view that's a subclass of DrillDownAPIView (use your own models; "Invoice" is just an example)::
+2. Create a view that's a subclass of BaseApiView (use your own models; "Invoice" is just an example)::
 
     from feel_rested.views import BaseApiView
 

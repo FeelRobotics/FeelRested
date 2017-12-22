@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='feel_rested',
-    version='0.1',
+    version='0.1.1',
     url='https://github.com/FeelRobotics/FeelRested',
     packages=['feel_rested'],
     include_package_data=True,

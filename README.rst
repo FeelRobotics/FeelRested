@@ -1,5 +1,5 @@
 =============
-Drilldown API
+Feel Rested
 =============
 
 Extends Django REST Framework to create instant full-featured GET APIs with fields, filters, offset,
@@ -19,9 +19,9 @@ Example adapted from code in tests.py.
 
 2. Create a view that's a subclass of DrillDownAPIView (use your own models; "Invoice" is just an example)::
 
-    from rest_framework_drilldown import DrillDownAPIView
+    from feel_rested.views import BaseApiView
 
-    class InvoiceList(DrillDownAPIView):
+    class InvoiceList(BaseApiView):
         """A GET API for Invoice objects"""
         # Primary model for the API (required)
         model = Invoice
@@ -45,10 +45,6 @@ Example adapted from code in tests.py.
         # Optional list of fields that your users are not allowed to
         # see or query
         hide = ['salesperson__commission_pct']
-
-        def get_base_query(self):
-            # Base query for your class, typically just '.objects.all()'
-            return Invoice.objects.all()
 
 
 3. In urls.py, create a URL for the view:
